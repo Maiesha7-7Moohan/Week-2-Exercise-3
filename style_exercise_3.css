@@ -145,7 +145,7 @@ body {
   }
 }
 
-/* --- Hero Section --- */
+/* Hero Section */
 .hero {
   position: relative;
   height: 60vh;
@@ -253,15 +253,17 @@ body {
 /* Product Image Formatting */
 .card-img-container {
   width: 100%;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   background-color: #f1f2f6;
 }
 
-.card-img-container a {
-  display: block;
+.card-img-container img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .product-image {
@@ -273,7 +275,7 @@ body {
 }
 
 /* Subtle image zoom inside the card on hover */
-.product-card:hover .product-image {
+.product-card:hover .card-img-container img {
   transform: scale(1.02);
 }
 
