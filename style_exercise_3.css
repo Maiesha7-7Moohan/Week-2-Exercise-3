@@ -21,9 +21,11 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  /* The z-index property controls the front-to-back order (the "Z-axis") of overlapping elements on a webpage. A higher number typically brings an element closer to the viewer */
   animation: fadeOutLoader 0.5s ease forwards;
   animation-delay: 1.5s;
   pointer-events: none;
+  /* This a CSS property that makes an element invisible to mouse and touch interactions */
 }
 
 .spinner {
@@ -58,7 +60,12 @@ body {
 /* --- Animated Navigation Menu --- */
 .nav-menu {
   display: flex;
+  /*In CSS, display: flex; is a command used to turn an element into a flex container, giving you total control over how its child elements are arranged, aligned, and spaced */
   justify-content: space-between;
+  /* "justify-content: space-between;" is a CSS instruction that tells a browser how to spread items across the container. 
+(Pushes items to the edges)  It sticks the first item to the very start (left) and the last item to the very end (right) of the container.
+(Creates equal gaps) All the remaining space is divided equally between the items in the middle.
+(No outer margins) Unlike other "space" properties, there is no extra space added before the first item or after the last one. */
   align-items: center;
   padding: 20px 40px;
   background-color: #ffffff;
@@ -190,6 +197,7 @@ body {
 @keyframes pulse {
   0% {
     transform: scale(1);
+    /* "transform: scale()" is a CSS property used to resize an element, such as a box, image, or text, on a 2D plane */
     box-shadow: 0 0 0 0 rgba(206, 153, 8, 0.7);
   }
   70% {
@@ -215,6 +223,7 @@ body {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
+  /* "overflow: hidden;" in CSS is a command that tells the browser to hide any content that spills outside the boundaries of its container. In this case the pictures of the products.  */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   opacity: 0;
   transform: translateY(40px);
