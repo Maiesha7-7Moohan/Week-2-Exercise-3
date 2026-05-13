@@ -158,6 +158,35 @@ body {
   overflow: hidden;
 }
 
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(-45deg, #e6d754, #c776d7, #805ac7, #e6cd45);
+  /*Makes the background large enough to move around */
+  background-size: 400% 400%;
+  /*Attaches the animation (15s duration, loops infinitely, smooth transition) */
+  animation: gradientShift 15s ease infinite;
+  color: #fff;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
