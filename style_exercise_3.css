@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #574188;
+  background-color: #c776d7;
   color: #333;
   overflow-x: hidden;
 }
@@ -153,7 +153,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, #e6d754, #574188);
+  background: linear-gradient(to bottom, #e6d754, #c776d7);
   color: #fff;
   overflow: hidden;
 }
